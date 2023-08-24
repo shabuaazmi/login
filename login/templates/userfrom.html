@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <center>
+            <form action="/userform1/" method="post">
+                {% csrf_token %}
+                <label>First Name</label> <input type="text" name="fname"><br><br>
+                <label>Last Name</label> <input type="text" name="lname"><br><br>
+                <label>Username</label> <input type="text" name="username"><br><br>
+                <label>Password</label> <input type="password" name="pswrd"><br><br>
+                <label>Email</label> <input type="email" name="email"><br><br>
+                <label>Phone</label> <input type="text" name="num"><br><br>
+                <label>Age</label> <input type="number" name="age"><br><br>
+                <label>Gender</label> <input type="radio" name="gender" value="M"> F 
+                <input type="radio" name="gender" value="M">M  <br><br>
+                <label>Address</label> <input type="textarea" name="adrs" > <br><br>
+                <input type="submit" value="Create">
+            </form>
+            </center>
+        </div>
+    </body>
+</html>

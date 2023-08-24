@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            div{
+                border: 1px solid black;
+                width: 400px;
+                height: 200px;
+                border-radius:2%;
+                margin-left: 450px;
+                margin-top: 150px;
+            }
+            label{
+                margin: 30px;
+                padding: 20px;
+                /* margin-bottam: 45px; */
+            }
+            form{
+                margin-top: 50px;
+            }
+            .login{
+                /* padding-left: 100px; */
+                margin-left: 170px;
+            }
+            a{
+                margin-left: 145px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="/login1/" method="post">
+                {% csrf_token %}
+                <label>Username</label><input type="text" name="username"><br><br>
+                <label>Password</label><input type="password" name="pswrd"><br><br>
+                <input class="login" type="submit" value="Login"> <br><br>
+                <a href="/userform/">Crete Account</a>
+            </form>
+        </div>
+    </body>
+</html>
